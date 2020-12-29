@@ -5,7 +5,7 @@ class PageBreak extends Component {
         return (
             <div className="page-break-ctn">
                 <div className="line-break"></div>
-                <h3 className="page-break" >or</h3>
+                <h4 className="page-break" >or</h4>
                 <div className="line-break"></div>
             </div>
             

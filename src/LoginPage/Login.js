@@ -49,8 +49,8 @@ class Login extends Component {
         return (
             <form action="">
                 <h2>facebook</h2>
-                <input onChange={this.onChange} className="login-username" type="text" placeholder="mobile number or email" />
-                <input onChange={this.onChange} className="login-password" type="text" placeholder="password" />
+                <input onChange={this.onChange} className="login-username" type="text" placeholder="Mobile number or email" />
+                <input onChange={this.onChange} className="login-password" type="text" placeholder="Password" />
                 <Link to={this.state.reRoute} onClick={this.delayRedirect}>
                     <button onClick={this.onSubmit} className="login-btn">Log in</button>
                 </Link>

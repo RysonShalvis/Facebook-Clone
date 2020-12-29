@@ -5,9 +5,12 @@ class Footer extends Component {
         return (
             <div className="footer-ctn">
                 <div className="footer-more">
-                    <h4>About</h4>
-                    <h4>Help</h4>
-                    <h4>More</h4>
+                    <p className="footer about">About</p>
+                    <p className="footer bullet">.</p>
+                    <p className="footer">Help</p>
+                    <p className="footer bullet">.</p>
+                    <p className="footer">More</p>
+                    <p className="trademark">Facebook Inc.</p>
                 </div>
             </div>
         );

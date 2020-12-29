@@ -13,23 +13,30 @@ html {
   height: 1px;
   width: 45vw;
   margin: 0 3vw;
-  background-color: black;
+  background-color: rgb(214, 214, 214);
  
 }
 
 .page-break {
-  
+  font-weight: 300;
+  font-size: 4vw;
 }
 
+
+
 .languages-ctn {
-  height: 500px;
+  height: 23vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .language {
-  
+  font-size: 3vw;
+  margin: .75vw;
+  color: rgb(104,121,160);
 }
 
 form {
@@ -47,7 +54,12 @@ form input {
   height: 10vw;
   background-color: rgb(245,246,247);
   border-radius: 5px;
-  border-color: gray;
+  border-style: none;
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+form input::placeholder {
+  padding-left: 3vw;
 }
 
 .login-btn {
@@ -56,4 +68,59 @@ form input {
   height: 12vw;
   width: 95vw;
   border-radius: 5px;
+  border-style: none;
+  font-size: 5vw; 
+  font-weight: bold;
+}
+
+.sign-up-ctn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up-btn {
+  width: 50vw;
+  height: 10vw;
+  font-size: 4vw; 
+  font-weight: bold;
+  color: white;
+  background-color: rgb(37,164,0);
+  border-radius: 4px;
+  border-style: none;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: rgb(146,172,212);
+  font-size: .65em;
+  font-weight: 50;
+}
+
+.footer-more {
+  width: 80%;
+  font-size: 2.75vw;
+  color: rgb(110, 110, 110);
+  margin: auto;
+  text-align: center;
+}
+
+.footer {
+  display: inline;
+  margin: .75vw;
+}
+
+
+
+.bullet {
+  font-size: 6vw;
+  position: relative;
+  bottom: 2px;
+  color: black;
+}
+
+.trademark {
+  font-size: 3vw;
+  font-weight: 500;
 }
