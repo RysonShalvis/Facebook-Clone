@@ -1,0 +1,59 @@
+
+html {
+  font-family: sans-serif;
+}
+
+.page-break-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-break {
+  height: 1px;
+  width: 45vw;
+  margin: 0 3vw;
+  background-color: black;
+ 
+}
+
+.page-break {
+  
+}
+
+.languages-ctn {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.language {
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+form h2 {
+  color: rgb(24,120,242);
+}
+
+form input {
+  margin: 2vw;
+  height: 10vw;
+  background-color: rgb(245,246,247);
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.login-btn {
+  background-color: rgb(24,120,242);
+  color: white;
+  height: 12vw;
+  width: 95vw;
+  border-radius: 5px;
+}

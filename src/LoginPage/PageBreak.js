@@ -1,0 +1,16 @@
+import React, { Component } from 'react';
+
+class PageBreak extends Component {
+    render() {
+        return (
+            <div className="page-break-ctn">
+                <div className="line-break"></div>
+                <h3 className="page-break" >or</h3>
+                <div className="line-break"></div>
+            </div>
+            
+        )
+    }
+}
+
+export default PageBreak;
