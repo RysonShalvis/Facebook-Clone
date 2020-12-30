@@ -29,6 +29,53 @@ html {
   color: rgb(97, 116, 145);
 }
 
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  /* add max and min width */
+}
+
+form h2 {
+  color: rgb(24,120,242);
+}
+
+form input {
+  max-width: 350px;
+  margin: 5px;
+  height: 40px;
+  background-color: rgb(245,246,247);
+  border-radius: 3px;
+  border-style: none;
+  box-shadow: 1px 1px 1px lightgray;
+  width: 95vw;
+  
+}
+
+form input::placeholder {
+  padding-left: 10px;
+}
+
+.login-btn {
+  max-width: 350px;
+  background-color: rgb(24,120,242);
+  color: white;
+  height: 40px;
+  width: 95vw;
+  border-radius: 3px;
+  border-style: none;
+  font-size: 18px; 
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 .page-break-ctn {
   display: flex;
   justify-content: center;
@@ -38,67 +85,18 @@ html {
 .line-break {
   height: 1px;
   width: 45vw;
-  margin: 0 3vw;
+  margin: 0 10px;
+  max-width: 160px;
   background-color: rgb(214, 214, 214);
  
 }
 
 .page-break {
   font-weight: 300;
-  font-size: 4vw;
+  font-size: 15px;
 }
 
 
-
-.languages-ctn {
-  height: 23vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.language {
-  font-size: 3vw;
-  margin: .75vw;
-  color: rgb(104,121,160);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  /* add max and min width */
-}
-
-form h2 {
-  color: rgb(24,120,242);
-}
-
-form input {
-  margin: 2vw;
-  height: 10vw;
-  background-color: rgb(245,246,247);
-  border-radius: 5px;
-  border-style: none;
-  box-shadow: 1px 1px 1px lightgray;
-}
-
-form input::placeholder {
-  padding-left: 3vw;
-}
-
-.login-btn {
-  background-color: rgb(24,120,242);
-  color: white;
-  height: 12vw;
-  width: 95vw;
-  border-radius: 5px;
-  border-style: none;
-  font-size: 5vw; 
-  font-weight: bold;
-}
 
 .sign-up-ctn {
   width: 100%;
@@ -108,9 +106,10 @@ form input::placeholder {
 }
 
 .sign-up-btn {
+  max-width: 175px;
   width: 50vw;
-  height: 10vw;
-  font-size: 4vw; 
+  height: 40px;
+  font-size: 15px; 
   font-weight: bold;
   color: white;
   background-color: rgb(37,164,0);
@@ -125,9 +124,24 @@ form input::placeholder {
   font-weight: 100;
 }
 
+.languages-ctn {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.language {
+  font-size: 11px;
+  margin: .75vw;
+  color: rgb(104,121,160);
+}
+
 .footer-more {
   width: 80%;
-  font-size: 2.75vw;
+  font-size: 10px;
   color: rgb(110, 110, 110);
   margin: auto;
   text-align: center;
@@ -141,13 +155,13 @@ form input::placeholder {
 
 
 .bullet {
-  font-size: 6vw;
+  font-size: 20px;
   position: relative;
   bottom: 2px;
   color: black;
 }
 
 .trademark {
-  font-size: 3vw;
+  font-size: 12px;
   font-weight: 500;
 }
