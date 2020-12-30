@@ -120,9 +120,9 @@ form input::placeholder {
 
 .forgot-password {
   text-decoration: none;
-  color: rgb(146,172,212);
+  color: rgb(115, 147, 194);
   font-size: .65em;
-  font-weight: 50;
+  font-weight: 100;
 }
 
 .footer-more {
