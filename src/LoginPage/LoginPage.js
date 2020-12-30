@@ -1,3 +1,4 @@
+import GetApp from './GetApp';
 import Login from './Login';
 import SignUp from './SignUp';
 import './LoginPage.css';
@@ -8,6 +9,7 @@ import Footer from './Footer';
 function LoginPage() {
   return ( 
     <div className="component-container">
+      <GetApp />
       <Login />
       <PageBreak />
       <SignUp />
