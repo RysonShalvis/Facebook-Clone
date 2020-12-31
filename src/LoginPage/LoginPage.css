@@ -1,7 +1,10 @@
 
-html {
+html { /*global font across whole page */
   font-family: sans-serif;
 }
+
+
+/* ask to download app section */
 
 .mobile-facebook-icon {
   position: relative;
@@ -27,9 +30,11 @@ html {
   color: rgb(97, 116, 145);
 }
 
+/* END ask to download app section */
 
 
 
+/* Login Section */
 
 form {
   display: flex;
@@ -73,6 +78,11 @@ form input::placeholder {
   margin-top: 10px;
 }
 
+/* END Login Section */
+
+
+/* Page Break Section */
+
 .page-break-ctn {
   display: flex;
   justify-content: center;
@@ -93,7 +103,11 @@ form input::placeholder {
   font-size: 15px;
 }
 
+/* END Page Break Section */
 
+
+
+/* Sign Up Section */
 
 .sign-up-ctn {
   width: 100%;
@@ -114,12 +128,23 @@ form input::placeholder {
   border-style: none;
 }
 
+/* END Sign Up Section */
+
+
+/* Forgot Password Section */
+
 .forgot-password {
   text-decoration: none;
   color: rgb(115, 147, 194);
   font-size: .55em;
   font-weight: 100;
 }
+
+/* END Forgot Password Section */
+
+
+
+/* Choose Language Section */
 
 .languages-ctn {
   height: 100px;
@@ -140,6 +165,11 @@ form input::placeholder {
   color: rgb(141, 141, 141);
   font-weight: 900;
 }
+
+/* END Choose Language Section */
+
+
+/* Footer Section */
 
 .footer-more {
   width: 80%;
@@ -167,3 +197,5 @@ form input::placeholder {
   font-size: 12px;
   font-weight: 500;
 }
+
+/* END Footer Section */
