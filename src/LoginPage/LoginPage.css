@@ -13,9 +13,7 @@ html {
 }
 
 .get-app-ctn {
-  
   height: 40px;
-  
   background-color: rgb(255,251,226);
 }
 
@@ -38,7 +36,6 @@ form {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 300px;
   margin: 0 auto;
   /* add max and min width */
 }
@@ -48,7 +45,7 @@ form h2 {
 }
 
 form input {
-  max-width: 350px;
+  max-width: 400px;
   margin: 5px;
   height: 40px;
   background-color: rgb(245,246,247);
@@ -64,7 +61,7 @@ form input::placeholder {
 }
 
 .login-btn {
-  max-width: 350px;
+  max-width: 400px;
   background-color: rgb(24,120,242);
   color: white;
   height: 40px;
@@ -86,7 +83,7 @@ form input::placeholder {
   height: 1px;
   width: 45vw;
   margin: 0 10px;
-  max-width: 160px;
+  max-width: 180px;
   background-color: rgb(214, 214, 214);
  
 }
@@ -108,8 +105,8 @@ form input::placeholder {
 .sign-up-btn {
   max-width: 175px;
   width: 50vw;
-  height: 40px;
-  font-size: 15px; 
+  height: 35px;
+  font-size: 14px; 
   font-weight: bold;
   color: white;
   background-color: rgb(37,164,0);
@@ -120,7 +117,7 @@ form input::placeholder {
 .forgot-password {
   text-decoration: none;
   color: rgb(115, 147, 194);
-  font-size: .65em;
+  font-size: .55em;
   font-weight: 100;
 }
 
@@ -137,6 +134,11 @@ form input::placeholder {
   font-size: 11px;
   margin: .75vw;
   color: rgb(104,121,160);
+}
+
+.selected-language {
+  color: rgb(141, 141, 141);
+  font-weight: 900;
 }
 
 .footer-more {
