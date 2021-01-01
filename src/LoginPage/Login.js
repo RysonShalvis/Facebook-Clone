@@ -54,6 +54,7 @@ class Login extends Component {
                 <Link to={this.state.reRoute} onClick={this.delayRedirect}>
                     <button onClick={this.onSubmit} className="login-btn">Log in</button>
                 </Link>
+                <div className="desktop forgot-password">Forgot Password?</div>
             </form>
         );
     }

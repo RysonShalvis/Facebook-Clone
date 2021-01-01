@@ -9,7 +9,7 @@ class SignUp extends Component {
                     <button className="sign-up-btn" >Create New Account</button>
                 </Link>
                 
-                <a className="forgot-password" href="">
+                <a className="mobile forgot-password" href="">
                     <h2>Forgot Password?</h2>
                 </a>
                 

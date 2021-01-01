@@ -3,7 +3,11 @@ html { /*global font across whole page */
   font-family: sans-serif;
 }
 
+.desktop {
+  display: none;
+}
 
+/* Mobile Section */
 /* ask to download app section */
 
 .mobile-facebook-icon {
@@ -199,3 +203,97 @@ form input::placeholder {
 }
 
 /* END Footer Section */
+
+/* END Mobile Section */
+
+@media screen and (min-width: 480px) {
+
+  html {
+    background-color: rgb(240,242,245);
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .header-ctn {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 60px;
+    color: rgb(24,120,242);
+    margin-bottom: 5px;
+  }
+
+  .sub-heading {
+    font-size: 28px;
+    margin-top: 5px;
+  }
+
+  .get-app-ctn {
+    display: none;
+  }
+
+  .login-create-ctn {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  form h2 {
+    display: none;
+  }
+
+  form input {
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    box-shadow: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 5px;
+  }
+  .login-btn {
+    width: 350px;
+    height: 50px;
+  }
+
+  .forgot-password {
+    font-size: 15px;
+    color: rgb(24,120,242);
+    font-weight: 700;
+    margin: 15px;
+  }
+
+  .line-break {
+    max-width: 1000px;
+    
+    margin: 10px 0 30px 0;
+    width: 400px;
+  }
+
+  .sign-up-btn {
+    max-width: 1000px;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .page-break {
+    display: none;
+  }
+
+  
+
+
+}
