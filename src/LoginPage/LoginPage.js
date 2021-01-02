@@ -7,6 +7,7 @@ import Languages from './Languages';
 import Footer from './Footer';
 import LoginHeader from './LoginHeader'
 import LoginBackground from './LoginBackground';
+import LoginCreatePage from './LoginCreatePage';
 
 function LoginPage() {
   return ( 
@@ -20,6 +21,7 @@ function LoginPage() {
         <SignUp />
 
       </div>
+      <LoginCreatePage />
       <Languages />
       <Footer />
     </div>

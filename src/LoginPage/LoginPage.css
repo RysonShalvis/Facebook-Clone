@@ -3,6 +3,10 @@ html { /*global font across whole page */
   font-family: sans-serif;
 }
 
+.create-page {
+  display: none;
+}
+
 .desktop {
   display: none;
 }
@@ -314,6 +318,17 @@ form input::placeholder {
 
   .login-create-ctn {
     box-shadow: -1px 1px 5px rgb(202, 202, 202);
+  }
+
+  .create-page {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .bold {
+    font-weight: bold;
   }
 
   .tablet-languages-ctn {
