@@ -6,10 +6,12 @@ import PageBreak from './PageBreak';
 import Languages from './Languages';
 import Footer from './Footer';
 import LoginHeader from './LoginHeader'
+import LoginBackground from './LoginBackground';
 
 function LoginPage() {
   return ( 
     <div className="component-container">
+      <LoginBackground />
       <GetApp />
       <LoginHeader />
       <div className="login-create-ctn">

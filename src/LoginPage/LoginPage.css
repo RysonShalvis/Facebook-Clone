@@ -7,6 +7,13 @@ html { /*global font across whole page */
   display: none;
 }
 
+.tablet {
+  display: none;
+}
+
+.tablet-language, .tablet-languages-ctn {
+  display: none;
+}
 /* Mobile Section */
 /* ask to download app section */
 
@@ -161,7 +168,7 @@ form input::placeholder {
 
 .language {
   font-size: 11px;
-  margin: .75vw;
+  margin: 5px;;
   color: rgb(104,121,160);
 }
 
@@ -179,7 +186,7 @@ form input::placeholder {
   width: 80%;
   font-size: 10px;
   color: rgb(110, 110, 110);
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -209,10 +216,23 @@ form input::placeholder {
 @media screen and (min-width: 480px) {
 
   html {
+    
+  }
+
+  .login-background {
+    position: absolute;
     background-color: rgb(240,242,245);
+    height: 750px;
+    width: 100%;
+    top: 0;
+    z-index: -5;
   }
 
   .desktop {
+    display: block;
+  }
+
+  .tablet {
     display: block;
   }
 
@@ -259,6 +279,7 @@ form input::placeholder {
     border-color: lightgray;
     border-radius: 5px;
   }
+
   .login-btn {
     width: 350px;
     height: 50px;
@@ -285,15 +306,42 @@ form input::placeholder {
     font-size: 18px;
   }
 
-  .mobile {
-    display: none;
-  }
+  
 
   .page-break {
     display: none;
   }
 
-  
+  .login-create-ctn {
+    box-shadow: -1px 1px 5px rgb(202, 202, 202);
+  }
 
+  .tablet-languages-ctn {
+    display: flex;
+    margin: 150px 90px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    height: 100px;
+    align-items: center;
+  }
+
+  .tablet-language {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 11px;
+    margin: 5px;
+    color: rgb(104,121,160);
+    
+    
+  }
+  
+  .mobile {
+    display: none;
+  }
+
+  .footer-ctn {
+    display: none;
+  }
 
 }
