@@ -335,6 +335,16 @@ form input::placeholder {
     
     
   }
+
+  .plus-icon {
+    text-align: center;
+    width: 20px;
+    height: 15px;
+    border-style: solid;
+    border-color: gray;
+    background-color: lightgray;
+    color: gray;
+  }
   
   .mobile {
     display: none;
@@ -343,5 +353,7 @@ form input::placeholder {
   .footer-ctn {
     display: none;
   }
+
+
 
 }
