@@ -181,6 +181,45 @@ form input::placeholder {
   font-weight: 900;
 }
 
+.plus-icon-ctn {
+  height: 15px;
+  width: 25px;
+  background-color: rgb(240,242,245);
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(190, 190, 190);
+}
+
+.plus-icon {
+  position: absolute;
+  height: 10px;
+  width: 3px;
+  background-color: rgb(195,198,203);
+  left: 10px;
+  bottom: 3px;
+  
+}
+
+.plus-icon::before {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 7px;
+  background-color: rgb(195,198,203);
+  top: 4px;
+  right: 0px;
+}
+
+.plus-icon::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 7px;
+  top: 4px;
+  background-color: rgb(195,198,203);
+}
+
 /* END Choose Language Section */
 
 
@@ -333,11 +372,10 @@ form input::placeholder {
 
   .tablet-languages-ctn {
     display: flex;
-    margin: 150px 90px;
+    margin: 150px 42px 0px 42px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    height: 100px;
     align-items: center;
   }
 
@@ -346,29 +384,49 @@ form input::placeholder {
     margin-bottom: 0px;
     font-size: 11px;
     margin: 5px;
-    color: rgb(104,121,160);
+    color: gray;
     
     
   }
 
-  .plus-icon {
-    text-align: center;
-    width: 20px;
-    height: 15px;
-    border-style: solid;
-    border-color: gray;
-    background-color: lightgray;
-    color: gray;
+  .tablet-page-break {
+    height: 1px;
+    width: 87vw;
+    background-color: rgb(212, 211, 211);
+    margin: 10px auto;
   }
+
+  
   
   .mobile {
     display: none;
   }
 
-  .footer-ctn {
+  .footer-more {
     display: none;
   }
 
+  .footer-tablet {
+    color: rgb(97, 97, 97);
+    margin-left: 40px;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 90vw;
+  }
+  
+  
+  .footer-more-tablet {
+    display: inline-block;
+    margin-left: 18px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
 
+  .tablet-trademark {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(97, 97, 97);
+  }
 
 }
