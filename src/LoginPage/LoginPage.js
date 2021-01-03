@@ -12,18 +12,23 @@ import LoginCreatePage from './LoginCreatePage';
 function LoginPage() {
   return ( 
     <div className="component-container">
-      <LoginBackground />
-      <GetApp />
-      <LoginHeader />
-      <div className="login-create-ctn">
-        <Login />
-        <PageBreak />
-        <SignUp />
-
+        <LoginBackground />
+        <GetApp />
+      <div className="main-ctn">
+        <LoginHeader />
+        <div className="form-create-page-ctn">
+          <div className="login-create-ctn">
+            <Login />
+            <PageBreak />
+            <SignUp />
+          </div>
+          <LoginCreatePage />
+        </div>
       </div>
-      <LoginCreatePage />
-      <Languages />
-      <Footer />
+      <div className="langauge-footer-ctn">
+        <Languages />
+        <Footer />
+      </div>
     </div>
     
   );
