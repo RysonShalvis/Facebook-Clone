@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import facebookUsers from '../UserList';
 import { Link } from 'react-router-dom';
+import HeaderCreateAccount from './HeaderCreateAccount'
+import Languages from '../LoginPage/Languages';
 
 const userCreator = (name,password) => {
             return {
@@ -33,21 +35,34 @@ class AddName extends Component {
 
     render() {
         return (
-            <div>
-                <h1 className="create-name-title" >What's your name?</h1>
-                <p className="enter-name">Enter the name you use i real life.</p>
-                <div className="create-name-ctn">
-                    <div className="first-name-ctn">
-                        <label htmlFor="">First Name</label>
-                        <input onChange={this.onChange} className="create-first-name" type="text"/>
+            <div className="add-name-ctn">
+                <HeaderCreateAccount />
+                <div className="name-info-ctn">
+                    <div className="create-account-title-ctn">
+                        <h1 className="create-name-title" >What's your name?</h1>
+                        <p className="enter-name">Enter the name you use in real life.</p>
                     </div>
-                    <div className="password-ctn">
-                        <label htmlFor="">Password</label>
-                        <input onChange={this.onChange} className="create-password" type="text"/>
+                    <div className="create-name-ctn">
+                        <div className="first-name-ctn input-ctn">
+                            <label htmlFor="">First Name</label>
+                            <input onChange={this.onChange} className="create-first-name" type="text"/>
+                        </div>
+                        <div className="password-ctn input-ctn">
+                            <label htmlFor="">Last Name</label>
+                            <input onChange={this.onChange} className="create-last-name" type="text"/>
+                        </div>
                     </div>
-                    <Link to="/">
-                        <button onClick={this.onNext} className="name-btn">Next</button>
-                    </Link>
+                        <Link to="/">
+                            <div className="next-btn-ctn">
+                                <button onClick={this.onNext} className="next-btn">Next</button>
+                            </div>
+                        </Link>
+                        <p className="already-have-account">Already have an account?</p>
+
+                </div>
+                <Languages />
+                <div className="trademark-ctn">
+                    <p className="trademark">Facebook Inc.</p>
                 </div>
             </div>
         );

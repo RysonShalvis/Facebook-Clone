@@ -1,0 +1,94 @@
+.add-name-ctn {
+    font-family: sans-serif;
+}
+
+.join-facebook {
+    width: 100%;
+    background-color: rgb(59,89,152);
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    font-size: 16px;
+}
+
+.name-info-ctn {
+    width: 80%;
+    margin: auto;
+    
+}
+
+
+
+.create-account-title-ctn, .next-btn-ctn {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.enter-name {
+    margin-bottom: 5px;
+}
+
+.create-name-title {
+    font-size: 21px;
+}
+
+.create-name-ctn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+.input-ctn label {
+    display: block;
+    font-size: 12px;
+    color: rgb(74, 81, 97);
+}
+
+.input-ctn input {
+    display: block;
+    height: 35px;
+    margin: 10px;
+    width: 40vw;
+    margin-left: 0;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.next-btn {
+     height: 35px;
+     width: 200px;
+     margin-top: 10px;
+     border-style: none;
+     border-radius: 5px;
+     color: white;
+     font-weight: bold;
+     font-size: 15px;
+     background-color: rgb(24,120,242);
+}
+
+.already-have-account {
+    color: rgb(65, 80, 114);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.trademark-ctn {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: rgb(126, 126, 126);
+}
+
+.trademark {
+    font-weight: bold;
+}
