@@ -63,6 +63,13 @@
     border-width: 1px;
 }
 
+.please-name {
+    display: block;
+    color: red;
+    margin: 0;
+
+}
+
 .next-btn {
      height: 35px;
      width: 200px;

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import facebookUsers from '../UserList';
 import { Link } from 'react-router-dom';
-import HeaderCreateAccount from './HeaderCreateAccount'
+import HeaderCreateAccount from './HeaderCreateAccount';
 import Languages from '../LoginPage/Languages';
+import './CreateAccountPage.css';
 
-const userCreator = (name,password) => {
+const userCreator = (name,lastName) => {
             return {
                 email: name,
-                password: password
+                lastName: lastName
             }
 }
 
@@ -17,23 +18,27 @@ class AddName extends Component {
         super(props);
         this.state = {
             firstName: '',
-            password: ''
+            lastName: '',
+            didClickNext: false
         }
         this.onChange = this.onChange.bind(this);
         this.onNext = this.onNext.bind(this);
     }
 
     onChange(e) {
-        e.target.classList[0] === 'create-first-name' ? this.setState({firstName: e.target.value},) : this.setState({password: e.target.value},a => console.log(this.state.password));
+        e.target.classList[0] === 'create-first-name' ? this.setState({firstName: e.target.value},) : this.setState({lastName: e.target.value},a => console.log(this.state.lastName));
     }
 
     onNext(e) {
-        facebookUsers.push(userCreator(this.state.firstName,this.state.password));
-        console.log(facebookUsers)
+        facebookUsers.push(userCreator(this.state.firstName,this.state.lastName));
+        console.log(facebookUsers);
+        this.setState({didClickNext: true})
     }
     
 
     render() {
+        const pleaseEnterName = this.state.didClickNext && this.state.firstName === '' || this.state.didClickNext && this.state.lastName === '' ? <p className="please-name">Enter your first and last Name</p> : ''
+        const ConditionalLink = this.state.firstName !== '' && this.state.lastName !== '' ? Link : 'div';
         return (
             <div className="add-name-ctn">
                 <HeaderCreateAccount />
@@ -47,16 +52,17 @@ class AddName extends Component {
                             <label htmlFor="">First Name</label>
                             <input onChange={this.onChange} className="create-first-name" type="text"/>
                         </div>
-                        <div className="password-ctn input-ctn">
+                        <div className="last-name-ctn input-ctn">
                             <label htmlFor="">Last Name</label>
                             <input onChange={this.onChange} className="create-last-name" type="text"/>
                         </div>
                     </div>
-                        <Link to="/">
+                        {pleaseEnterName}
+                        <ConditionalLink to="/create-account/birthday">
                             <div className="next-btn-ctn">
                                 <button onClick={this.onNext} className="next-btn">Next</button>
                             </div>
-                        </Link>
+                        </ConditionalLink>
                         <p className="already-have-account">Already have an account?</p>
 
                 </div>
