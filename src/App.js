@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import AddName from './CreateAccountPage/AddName';
 import AddBirthday from './CreateAccountPage/AddBirthday';
+import AddAge from './CreateAccountPage/AddAge';
+import EnterNumber from './CreateAccountPage/EnterNumber';
  
 class App extends Component {
     render() {
@@ -17,6 +19,8 @@ class App extends Component {
                         
                         <Route path="/create-account/name" component={AddName} />
                         <Route path="/create-account/birthday" component={AddBirthday} /> 
+                        <Route path="/create-account/age" component={AddAge} /> 
+                        <Route path="/create-account/phonenumber" component={EnterNumber} /> 
                         
                     </Switch>
                 </div>

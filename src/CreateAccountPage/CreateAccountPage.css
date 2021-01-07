@@ -72,8 +72,9 @@
 
 .next-btn {
      height: 35px;
-     width: 200px;
+     width: 60vw;
      margin-top: 10px;
+     margin-bottom: 10px;
      border-style: none;
      border-radius: 5px;
      color: white;
@@ -99,3 +100,75 @@
 .trademark {
     font-weight: bold;
 }
+
+.enter-birthday {
+    font-size: 14px;
+}
+
+
+
+.birthday-label {
+    display: block;
+    font-size: 12px;
+    color: rgb(100, 107, 138);
+}
+
+.birthday-select-ctn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    
+}
+
+select {
+    display: inline-block;
+    width: 25vw;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(201, 201, 201);
+}
+
+.age-ctn {
+    width: 20vw;
+    margin: auto;
+}
+
+.create-age, .add-number  {
+    display: block;
+    height: 35px;
+    margin: 10px auto;
+    width: 20vw;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-radius: 5px;
+    border-width: 1px;
+    padding-left: 10px;
+}
+
+.age-label, .phone-label {
+    display: block;
+    font-size: 12px;
+    color: rgb(74, 81, 97);
+}
+
+.use-date-of-birth {
+    color: rgb(44, 66, 117);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.phone-ctn {
+    margin-top: 20px;
+}
+
+.add-number {
+    width: 80vw;
+}
+
+ 
