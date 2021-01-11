@@ -63,7 +63,7 @@ class AddName extends Component {
                                 <button onClick={this.onNext} className="next-btn">Next</button>
                             </div>
                         </ConditionalLink>
-                        <p className="already-have-account">Already have an account?</p>
+                        
 
                 </div>
                 <Languages />

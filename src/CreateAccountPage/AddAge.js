@@ -26,6 +26,9 @@ class AddAge extends Component {
                 <p className="already-have-account">Already have an account?</p>
                 </div>
                 <Languages />
+                <div className="trademark-ctn">
+                    <p className="trademark">Facebook Inc.</p>
+                </div>
             </div>
         );
     }

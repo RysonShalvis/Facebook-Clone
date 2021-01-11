@@ -65,9 +65,9 @@ class AddBirthday extends Component {
                                 <option value="30">30</option>
                                 <option value="31">31</option>
                             </select>
-                            <select name="year" id="year">
+                            <select name="year" selected="1" id="year">
                                 <option value="0">Year</option>
-                                <option value="2021" selected="1">2021</option>
+                                <option value="2021" >2021</option>
                                 <option value="2020">2020</option>
                                 <option value="2019">2019</option>
                                 <option value="2018">2018</option>
