@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class DesktopCreateAccount extends Component {
+
+    constructor(props) {
+        super(props);
+        
+    }
+    
+
     render() {
         return (
             <div>
                 <form className="desktop-form">
                     <h1 className="desktop-form-title">Sign Up</h1>
+                    <button onClick={this.props.onClick}>X</button>
                     <h3 className="desktop-form-sub-title">Its quick and easy.</h3>
                     <div className="desktop-form-name-ctn">
                         <input type="text" placeholder="First name" className="desktop-form-name first"/>
@@ -191,7 +199,7 @@ class DesktopCreateAccount extends Component {
                             <input name="female" className="add-gender-tablet" type="radio"/>
                         </div>
                         <div className="gender-wrapper-ctn">
-                            <label className="gender-label-tablet" htmlFor="male">Male<span>Fe</span></label>
+                            <label className="gender-label-tablet" htmlFor="male">Male</label>
                             <input name="male" className="add-gender-tablet" type="radio"/>
                         </div>
                         <div className="gender-wrapper-ctn">

@@ -14,10 +14,10 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <DesktopCreateAccount />
+                
                 <div>
                     <Switch>    
-                        {/*<Route path="/" exact component={LoginPage} />*/}
+                        <Route path="/" exact component={LoginPage} />
                         <Route path="/userpage" exact component={UserPage} />
                         
                         <Route path="/create-account/name" component={AddName} />
