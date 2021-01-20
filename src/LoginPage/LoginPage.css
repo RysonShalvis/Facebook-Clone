@@ -520,4 +520,5 @@ html { /*global font across whole page */
   margin: auto;
   border-style: solid;
   width: 500px;
+  background-color: white;
 }
