@@ -505,3 +505,19 @@ html { /*global font across whole page */
 }
 
 /* END Desktop Section */
+
+/* Desktop Create Account Section */
+
+.tablet-sign-up-ctn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+}
+
+.desktop-form {
+  
+  margin: auto;
+  border-style: solid;
+  width: 500px;
+}

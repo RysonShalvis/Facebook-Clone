@@ -39,7 +39,7 @@ class LoginPage extends React.Component {
 
     return ( 
       <div className="component-container">
-        <div style={{position: 'absolute'}} className="tablet-sign-up-ctn">
+        <div className="tablet-sign-up-ctn">
           {this.state.bigScreenSize ? <DesktopCreateAccount onClick={this.buttonOnClick} /> : ''}
         </div>
           <LoginBackground />
