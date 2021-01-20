@@ -1,71 +1,69 @@
 import React, { Component } from 'react';
-import HeaderCreateAccount from './HeaderCreateAccount';
-import Languages from '../LoginPage/Languages';
 import { Link } from 'react-router-dom';
 
-
-
-class AddBirthday extends Component {
+class DesktopCreateAccount extends Component {
     render() {
         return (
             <div>
-                <HeaderCreateAccount />
-                <div className="name-info-ctn">
-                    <div className="create-account-title-ctn">
-                        <h1 className="create-name-title create-birthday-title" >What's your birthday?</h1>
-                        <p className="enter-name enter-birthday">Choose your date of birth. You can always make this private later.</p>
+                <form className="desktop-form">
+                    <h1 className="desktop-form-title">Sign Up</h1>
+                    <h3 className="desktop-form-sub-title">Its quick and easy.</h3>
+                    <div className="desktop-form-name-ctn">
+                        <input type="text" placeholder="First name" className="desktop-form-name first"/>
+                        <input type="text" placeholder="Last Name" className="desktop-form-name last"/>
                     </div>
-                    <div className="choose-birthday-ctn">
-                        <label className="birthday-label" htmlFor="">Birthday</label>
-                        <div className="birthday-select-ctn">
-                            <select className="birthday" name="month" id="month">
-                                <option value="jan">Jan</option>
-                                <option value="feb">Feb</option>
-                                <option value="mar">Mar</option>
-                                <option value="apr">Apr</option>
-                                <option value="may">May</option>
-                                <option value="jun">Jun</option>
-                                <option value="jul">Jul</option>
-                                <option value="aug">Aug</option>
-                                <option value="sep">Sep</option>
-                                <option value="oct">Oct</option>
-                                <option value="nov">Nov</option>
-                                <option value="dec">Dec</option>
-                            </select>
-                            <select className="birthday" name="day" id="day">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select>
-                            <select className="birthday" name="year" selected="1" id="year">
+                    <input type="text" placeholder="Mobile number or email" className="desktop-mobile-input"/>
+                    <input type="text" placeholder="New password" className="desktop-password-input"/>
+                    <div className="desktop-birthday-ctn">
+                        <h4 className="birthday-title-tablet">Birthday</h4>
+                        <select name="year" className="birthday-tablet">
+                            <option value="jan">Jan</option>
+                            <option value="feb">Feb</option>
+                            <option value="mar">Mar</option>
+                            <option value="apr">Apr</option>
+                            <option value="may">May</option>
+                            <option value="jun">Jun</option>
+                            <option value="jul">Jul</option>
+                            <option value="aug">Aug</option>
+                            <option value="sep">Sep</option>
+                            <option value="oct">Oct</option>
+                            <option value="nov">Nov</option>
+                            <option value="dec">Dec</option>
+                        </select>
+                        <select name="day" className="birthday-tablet">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select className="birthday-tablet" name="year" selected="1" id="year">
                                 <option value="0">Year</option>
                                 <option value="2021" >2021</option>
                                 <option value="2020">2020</option>
@@ -185,22 +183,32 @@ class AddBirthday extends Component {
                                 <option value="1906">1906</option>
                                 <option value="1905">1905</option>
                             </select>
+                    </div>
+                    <div className="gender-ctn-tablet">
+                        <h4 className="gender-title-tablet">Gender</h4>
+                        <div className="gender-wrapper-ctn">
+                            <label className="gender-label-tablet" htmlFor="female">Female</label>
+                            <input name="female" className="add-gender-tablet" type="radio"/>
+                        </div>
+                        <div className="gender-wrapper-ctn">
+                            <label className="gender-label-tablet" htmlFor="male">Male<span>Fe</span></label>
+                            <input name="male" className="add-gender-tablet" type="radio"/>
+                        </div>
+                        <div className="gender-wrapper-ctn">
+                            <label className="gender-label-tablet" htmlFor="custom">Custom</label>
+                            <input name="custom" className="add-gender-tablet" type="radio"/>
                         </div>
                     </div>
-                <Link to="/create-account/age">
-                    <div className="next-btn-ctn">
-                        <button className="next-btn">Next</button>
-                    </div>
-                </Link>
-                <p className="already-have-account">Already have an account?</p>
-                </div>
-                <Languages />
-                <div className="trademark-ctn">
-                    <p className="trademark">Facebook Inc.</p>
-                </div>
+                    <p className="use-date-of-birth">By tapping Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may recieve SMS notifications from us and can opt out any time</p>
+                    <Link to="/">
+                        <div className="sign-up-ctn-tablet">
+                            <button className="sign-up-btn-tablet">Sign Up</button>
+                        </div>
+                    </Link>
+                </form>
             </div>
         );
     }
 }
 
-export default AddBirthday;
+export default DesktopCreateAccount;

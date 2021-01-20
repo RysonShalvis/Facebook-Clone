@@ -8,14 +8,16 @@ import AddAge from './CreateAccountPage/AddAge';
 import EnterNumber from './CreateAccountPage/EnterNumber';
 import ChooseGender from './CreateAccountPage/ChooseGender';
 import CreatePassword from './CreateAccountPage/CreatePassword';
+import DesktopCreateAccount from './LoginPage/DesktopCreateAccount';
  
 class App extends Component {
     render() {
         return (
             <Router>
+                <DesktopCreateAccount />
                 <div>
                     <Switch>    
-                        <Route path="/" exact component={LoginPage} />
+                        {/*<Route path="/" exact component={LoginPage} />*/}
                         <Route path="/userpage" exact component={UserPage} />
                         
                         <Route path="/create-account/name" component={AddName} />
