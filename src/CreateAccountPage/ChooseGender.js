@@ -18,7 +18,7 @@ class ChooseGender extends Component {
                         <input name="female" className="add-gender" type="radio"/>
                     </div>
                     <div className="gender-ctn">
-                        <label className="gender-label" htmlFor="male">Male<span>Fe</span></label>
+                        <label className="gender-label" htmlFor="male">Male<span className="white-space">Fe</span></label>
                         <input name="male" className="add-gender" type="radio"/>
                     </div>
                     <div className="gender-ctn">
