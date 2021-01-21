@@ -467,8 +467,11 @@ html { /*global font across whole page */
 
   .main-ctn {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header-ctn {
