@@ -474,6 +474,7 @@ html { /*global font across whole page */
   .header-ctn {
     display: inline-block;
     margin: 0;
+    text-align: left;
   }
 
   .login-create-ctn {
